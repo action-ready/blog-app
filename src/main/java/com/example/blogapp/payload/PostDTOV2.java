@@ -4,15 +4,11 @@ package com.example.blogapp.payload;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.Set;
 
 @Data
-
-public class PostDTO {
-
+public class PostDTOV2 {
     private Long id;
     @NotEmpty
     @Size(min = 1, message = "Post title should have at least 2 characters")

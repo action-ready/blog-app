@@ -1,5 +1,7 @@
 package com.example.blogapp.service;
 
+import com.example.blogapp.entity.Post;
+import com.example.blogapp.payload.CategoryDTO;
 import com.example.blogapp.payload.PostDTO;
 import com.example.blogapp.payload.PostResponse;
 
@@ -15,4 +17,6 @@ public interface PostService {
     PostDTO updatePost(PostDTO postDTO, Long id);
 
     void deletePostById(Long id);
+
+    List<PostDTO> getPostByCategoryId(Long categoryId);
 }
